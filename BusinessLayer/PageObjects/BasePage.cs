@@ -1,58 +1,32 @@
 using OpenQA.Selenium;
 using CoreLayer.Drivers;
 using OpenQA.Selenium.Support.UI;
-namespace BusinessLayer.BasePage
+namespace BusinessLayer.Base
 {
-    public class Base
+    public class BasePage
     {
-        protected IWebDriver Driver => WebDriverSingleton.Driver;
+        protected IWebDriver Driver;
 
-        public void CloseDriver()
+        public BasePage()
         {
-            WebDriverSingleton.QuitDriver();
+            // Each test thread gets its own driver instance (ThreadLocal)
+            Driver = WebDriverSingleton.Driver;
         }
 
-        public string GetPageTitle()
-        {
-            return Driver.Title;
-        }
+        public void Click(By by) => WaitForElementToBePresent(by)?.Click();
 
-        public string GetCurrentUrl()
-        {
-            return Driver.Url;
-        }
-
-        public void MaximizeWindow()
-        {
-            Driver.Manage().Window.Maximize();
-        }
-
-        public void Click(By by)
-        {
-            WaitForElementToBePresent(Driver, by)?.Click();
-        }
         public void EnterText(By by, string text)
         {
-            var element = WaitForElementToBePresent(Driver, by);
+            var element = WaitForElementToBePresent(by);
             element.SendKeys(Keys.Control + "a");
             element.SendKeys(Keys.Delete);
             element.Clear();
             element.SendKeys(text);
         }
 
-        public IReadOnlyCollection<IWebElement> FindElements(By by)
-        {
-            var elementPresent = WaitForElementToBePresent(Driver, by);
-            return elementPresent.FindElements(by);
-        }
+        public IWebElement FindElement(By by) => WaitForElementToBePresent(by);
 
-        public IWebElement FindElement(By by)
-        {
-            var elementPresent = WaitForElementToBePresent(Driver, by);
-            return elementPresent.FindElement(by);
-        }
-
-        public IWebElement WaitForElementToBePresent(IWebDriver Driver, By by)
+        public IWebElement WaitForElementToBePresent(By by)
         {
             var wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(10));
             return wait.Until(drv =>
@@ -60,14 +34,9 @@ namespace BusinessLayer.BasePage
                 try
                 {
                     var element = drv.FindElement(by);
-                    if (element != null && element.Displayed)
-                        return element;
+                    if (element.Displayed) return element;
                 }
-                catch (NoSuchElementException)
-                {
-                    Console.WriteLine("WaitForElementToBePresent method: 'NoSuchElementException' is found.");
-                }
-
+                catch (NoSuchElementException) { }
                 return null;
             });
         }

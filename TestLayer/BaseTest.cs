@@ -35,6 +35,7 @@ namespace TestLayer.Base
         public static void AssemblyCleanup()
         {
             Log.Info("===== Test Suite Completed =====");
+            WebDriverSingleton.QuitDriver();
         }
 
         public TestContext TestContext { get; set; }

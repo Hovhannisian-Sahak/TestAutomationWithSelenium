@@ -9,7 +9,6 @@ namespace CoreLayer.Drivers
 {
     public sealed class WebDriverSingleton
     {
-        [ThreadStatic]
         private static IWebDriver _driver;
 
         private WebDriverSingleton() { }
@@ -21,6 +20,7 @@ namespace CoreLayer.Drivers
                 if (_driver == null)
                 {
                     _driver = CreateWebDriver(Configuration.BrowserType);
+
                 }
                 return _driver;
             }

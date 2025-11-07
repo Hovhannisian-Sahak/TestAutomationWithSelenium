@@ -1,0 +1,7 @@
+[16:59:43 INF] (Thread:4) Logger initialized.
+[16:59:43 INF] (Thread:4) ===== Test Suite Started =====
+[17:00:14 INF] (Thread:4) Starting test: Login_without_username_or_password_should_fail with username=''
+[17:00:14 INF] (Thread:4) Attempting login...
+[17:00:16 INF] (Thread:4) Captured error message: 'Epic sadface: Username is required'
+[17:00:16 INF] (Thread:4) Test passed: Validation message was correct.
+[17:00:21 INF] (Thread:4) ===== Test Suite Completed =====
