@@ -25,15 +25,6 @@ namespace CoreLayer.Config
 
             BrowserType = browserType;
             AppUrl = config["ApplicationUrl"] ?? string.Empty;
-            TestDataPath = config["TestDataPath"] ?? string.Empty;
-
-            var b = config["BrowserType"];
-            var appUrl = config["ApplicationUrl"];
-            var testDataPath = config["TestDataPath"];
-
-            Console.WriteLine($"BrowserType: {b}");
-            Console.WriteLine($"AppUrl: {appUrl}");
-            Console.WriteLine($"TestDataPath: {testDataPath}");
         }
     }
 }
