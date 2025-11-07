@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Kbiq32ut5xA=",
+  "dgSpecHash": "kVCxF/GPCnw=",
   "success": true,
   "projectFilePath": "C:\\Users\\Sahak\\TestAutomationSelenium\\TestLayer\\TestLayer.csproj",
   "expectedPackageFiles": [
@@ -25,6 +25,11 @@
     "C:\\Users\\Sahak\\.nuget\\packages\\selenium.support\\4.38.0\\selenium.support.4.38.0.nupkg.sha512",
     "C:\\Users\\Sahak\\.nuget\\packages\\selenium.webdriver\\4.38.0\\selenium.webdriver.4.38.0.nupkg.sha512",
     "C:\\Users\\Sahak\\.nuget\\packages\\selenium.webdriver.chromedriver\\142.0.7444.6100\\selenium.webdriver.chromedriver.142.0.7444.6100.nupkg.sha512",
+    "C:\\Users\\Sahak\\.nuget\\packages\\serilog\\4.3.0\\serilog.4.3.0.nupkg.sha512",
+    "C:\\Users\\Sahak\\.nuget\\packages\\serilog.enrichers.process\\3.0.0\\serilog.enrichers.process.3.0.0.nupkg.sha512",
+    "C:\\Users\\Sahak\\.nuget\\packages\\serilog.enrichers.thread\\4.0.0\\serilog.enrichers.thread.4.0.0.nupkg.sha512",
+    "C:\\Users\\Sahak\\.nuget\\packages\\serilog.sinks.console\\6.1.1\\serilog.sinks.console.6.1.1.nupkg.sha512",
+    "C:\\Users\\Sahak\\.nuget\\packages\\serilog.sinks.file\\7.0.0\\serilog.sinks.file.7.0.0.nupkg.sha512",
     "C:\\Users\\Sahak\\.nuget\\packages\\system.io.pipelines\\9.0.10\\system.io.pipelines.9.0.10.nupkg.sha512",
     "C:\\Users\\Sahak\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512",
     "C:\\Users\\Sahak\\.nuget\\packages\\system.text.encodings.web\\9.0.10\\system.text.encodings.web.9.0.10.nupkg.sha512",

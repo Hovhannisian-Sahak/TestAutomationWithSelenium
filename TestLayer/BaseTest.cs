@@ -1,12 +1,18 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using CoreLayer.Drivers;
 using CoreLayer.Config;
-
+using CoreLayer.Logging;
 namespace TestLayer.Base
 {
     [TestClass]
     public class BaseTest
     {
+        [AssemblyInitialize]
+        public static void AssemblyInit(TestContext context)
+        {
+            Log.Initialize();
+            Log.Info("===== Test Suite Started =====");
+        }
         [TestInitialize]
         public void Setup()
         {
@@ -25,5 +31,12 @@ namespace TestLayer.Base
         {
             WebDriverSingleton.QuitDriver();
         }
+        [AssemblyCleanup]
+        public static void AssemblyCleanup()
+        {
+            Log.Info("===== Test Suite Completed =====");
+        }
+
+        public TestContext TestContext { get; set; }
     }
 }

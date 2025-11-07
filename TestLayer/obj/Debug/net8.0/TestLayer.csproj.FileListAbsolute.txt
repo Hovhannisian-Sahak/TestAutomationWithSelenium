@@ -134,3 +134,8 @@ C:\Users\Sahak\TestAutomationSelenium\TestLayer\obj\Debug\net8.0\TestLayer.pdb
 C:\Users\Sahak\TestAutomationSelenium\TestLayer\obj\Debug\net8.0\TestLayer.genruntimeconfig.cache
 C:\Users\Sahak\TestAutomationSelenium\TestLayer\obj\Debug\net8.0\ref\TestLayer.dll
 C:\Users\Sahak\TestAutomationSelenium\TestLayer\bin\Debug\net8.0\appsettings.json
+C:\Users\Sahak\TestAutomationSelenium\TestLayer\bin\Debug\net8.0\Serilog.dll
+C:\Users\Sahak\TestAutomationSelenium\TestLayer\bin\Debug\net8.0\Serilog.Enrichers.Process.dll
+C:\Users\Sahak\TestAutomationSelenium\TestLayer\bin\Debug\net8.0\Serilog.Enrichers.Thread.dll
+C:\Users\Sahak\TestAutomationSelenium\TestLayer\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+C:\Users\Sahak\TestAutomationSelenium\TestLayer\bin\Debug\net8.0\Serilog.Sinks.File.dll
