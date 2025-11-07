@@ -12,3 +12,17 @@ C:\Users\Sahak\TestAutomationSelenium\CoreLayer\obj\Debug\net8.0\refint\CoreLaye
 C:\Users\Sahak\TestAutomationSelenium\CoreLayer\obj\Debug\net8.0\CoreLayer.pdb
 C:\Users\Sahak\TestAutomationSelenium\CoreLayer\obj\Debug\net8.0\ref\CoreLayer.dll
 C:\Users\Sahak\TestAutomationSelenium\CoreLayer\bin\Debug\net8.0\appsettings.json
+C:\Users\Honor\Downloads\Telegram Desktop\TestAutomationSelenium\TestAutomationSelenium\CoreLayer\bin\Debug\net8.0\appsettings.json
+C:\Users\Honor\Downloads\Telegram Desktop\TestAutomationSelenium\TestAutomationSelenium\CoreLayer\bin\Debug\net8.0\CoreLayer.deps.json
+C:\Users\Honor\Downloads\Telegram Desktop\TestAutomationSelenium\TestAutomationSelenium\CoreLayer\bin\Debug\net8.0\CoreLayer.dll
+C:\Users\Honor\Downloads\Telegram Desktop\TestAutomationSelenium\TestAutomationSelenium\CoreLayer\bin\Debug\net8.0\CoreLayer.pdb
+C:\Users\Honor\Downloads\Telegram Desktop\TestAutomationSelenium\TestAutomationSelenium\CoreLayer\obj\Debug\net8.0\CoreLayer.csproj.AssemblyReference.cache
+C:\Users\Honor\Downloads\Telegram Desktop\TestAutomationSelenium\TestAutomationSelenium\CoreLayer\obj\Debug\net8.0\CoreLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Honor\Downloads\Telegram Desktop\TestAutomationSelenium\TestAutomationSelenium\CoreLayer\obj\Debug\net8.0\CoreLayer.AssemblyInfoInputs.cache
+C:\Users\Honor\Downloads\Telegram Desktop\TestAutomationSelenium\TestAutomationSelenium\CoreLayer\obj\Debug\net8.0\CoreLayer.AssemblyInfo.cs
+C:\Users\Honor\Downloads\Telegram Desktop\TestAutomationSelenium\TestAutomationSelenium\CoreLayer\obj\Debug\net8.0\CoreLayer.csproj.CoreCompileInputs.cache
+C:\Users\Honor\Downloads\Telegram Desktop\TestAutomationSelenium\TestAutomationSelenium\CoreLayer\obj\Debug\net8.0\CoreLayer.sourcelink.json
+C:\Users\Honor\Downloads\Telegram Desktop\TestAutomationSelenium\TestAutomationSelenium\CoreLayer\obj\Debug\net8.0\CoreLayer.dll
+C:\Users\Honor\Downloads\Telegram Desktop\TestAutomationSelenium\TestAutomationSelenium\CoreLayer\obj\Debug\net8.0\refint\CoreLayer.dll
+C:\Users\Honor\Downloads\Telegram Desktop\TestAutomationSelenium\TestAutomationSelenium\CoreLayer\obj\Debug\net8.0\CoreLayer.pdb
+C:\Users\Honor\Downloads\Telegram Desktop\TestAutomationSelenium\TestAutomationSelenium\CoreLayer\obj\Debug\net8.0\ref\CoreLayer.dll

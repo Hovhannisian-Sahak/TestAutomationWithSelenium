@@ -4,50 +4,48 @@ using OpenQA.Selenium.Edge;
 using OpenQA.Selenium.Firefox;
 using CoreLayer.Config;
 using System;
+using System.Threading;
 
 namespace CoreLayer.Drivers
 {
     public sealed class WebDriverSingleton
     {
-        private static IWebDriver _driver;
+        // Each thread gets its own driver instance
+        private static ThreadLocal<IWebDriver> _driver = new ThreadLocal<IWebDriver>();
 
         private WebDriverSingleton() { }
 
-        public static IWebDriver Driver
+        public static void InitDriver(BrowserType browserType)
         {
-            get
+            if (!_driver.IsValueCreated || _driver.Value == null)
             {
-                if (_driver == null)
+                _driver.Value = browserType switch
                 {
-                    _driver = CreateWebDriver(Configuration.BrowserType);
+                    BrowserType.Edge => new EdgeDriver(),
+                    BrowserType.Firefox => new FirefoxDriver(),
+                    _ => throw new ArgumentOutOfRangeException(nameof(browserType), browserType, null)
+                };
 
-                }
-                return _driver;
+                _driver.Value.Manage().Window.Maximize();
             }
         }
 
-        private static IWebDriver CreateWebDriver(BrowserType browserType)
-        {
-            switch (browserType)
-            {
-                case BrowserType.Edge:
-                    return new EdgeDriver();
-
-                case BrowserType.Firefox:
-                    return new FirefoxDriver();
-
-                default:
-                    throw new ArgumentOutOfRangeException(nameof(browserType), browserType, null);
-            }
-        }
+        public static IWebDriver Driver => _driver.Value;
 
         public static void QuitDriver()
         {
-            if (_driver != null)
+            if (_driver.IsValueCreated && _driver.Value != null)
             {
-                _driver.Quit();
-                _driver.Dispose();
-                _driver = null;
+                try
+                {
+                    _driver.Value.Quit();
+                    _driver.Value.Dispose();
+                }
+                catch { /* ignore exceptions */ }
+                finally
+                {
+                    _driver.Value = null;
+                }
             }
         }
     }

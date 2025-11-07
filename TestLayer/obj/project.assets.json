@@ -1964,19 +1964,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Sahak\\.nuget\\packages\\": {}
+    "C:\\Users\\Honor\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sahak\\TestAutomationSelenium\\TestLayer\\TestLayer.csproj",
+      "projectUniqueName": "C:\\Users\\Honor\\Downloads\\Telegram Desktop\\TestAutomationSelenium\\TestAutomationSelenium\\TestLayer\\TestLayer.csproj",
       "projectName": "TestLayer",
-      "projectPath": "C:\\Users\\Sahak\\TestAutomationSelenium\\TestLayer\\TestLayer.csproj",
-      "packagesPath": "C:\\Users\\Sahak\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sahak\\TestAutomationSelenium\\TestLayer\\obj\\",
+      "projectPath": "C:\\Users\\Honor\\Downloads\\Telegram Desktop\\TestAutomationSelenium\\TestAutomationSelenium\\TestLayer\\TestLayer.csproj",
+      "packagesPath": "C:\\Users\\Honor\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Honor\\Downloads\\Telegram Desktop\\TestAutomationSelenium\\TestAutomationSelenium\\TestLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Sahak\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Honor\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -1988,8 +1988,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Sahak\\TestAutomationSelenium\\BusinessLayer\\BusinessLayer.csproj": {
-              "projectPath": "C:\\Users\\Sahak\\TestAutomationSelenium\\BusinessLayer\\BusinessLayer.csproj"
+            "C:\\Users\\Honor\\Downloads\\Telegram Desktop\\TestAutomationSelenium\\TestAutomationSelenium\\BusinessLayer\\BusinessLayer.csproj": {
+              "projectPath": "C:\\Users\\Honor\\Downloads\\Telegram Desktop\\TestAutomationSelenium\\TestAutomationSelenium\\BusinessLayer\\BusinessLayer.csproj"
             }
           }
         }
@@ -2078,7 +2078,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.414/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.407/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

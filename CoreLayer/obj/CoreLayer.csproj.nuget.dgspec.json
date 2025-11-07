@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sahak\\TestAutomationSelenium\\CoreLayer\\CoreLayer.csproj": {}
+    "C:\\Users\\Honor\\Downloads\\Telegram Desktop\\TestAutomationSelenium\\TestAutomationSelenium\\CoreLayer\\CoreLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sahak\\TestAutomationSelenium\\CoreLayer\\CoreLayer.csproj": {
+    "C:\\Users\\Honor\\Downloads\\Telegram Desktop\\TestAutomationSelenium\\TestAutomationSelenium\\CoreLayer\\CoreLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sahak\\TestAutomationSelenium\\CoreLayer\\CoreLayer.csproj",
+        "projectUniqueName": "C:\\Users\\Honor\\Downloads\\Telegram Desktop\\TestAutomationSelenium\\TestAutomationSelenium\\CoreLayer\\CoreLayer.csproj",
         "projectName": "CoreLayer",
-        "projectPath": "C:\\Users\\Sahak\\TestAutomationSelenium\\CoreLayer\\CoreLayer.csproj",
-        "packagesPath": "C:\\Users\\Sahak\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sahak\\TestAutomationSelenium\\CoreLayer\\obj\\",
+        "projectPath": "C:\\Users\\Honor\\Downloads\\Telegram Desktop\\TestAutomationSelenium\\TestAutomationSelenium\\CoreLayer\\CoreLayer.csproj",
+        "packagesPath": "C:\\Users\\Honor\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Honor\\Downloads\\Telegram Desktop\\TestAutomationSelenium\\TestAutomationSelenium\\CoreLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Sahak\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Honor\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -96,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.414/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.407/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

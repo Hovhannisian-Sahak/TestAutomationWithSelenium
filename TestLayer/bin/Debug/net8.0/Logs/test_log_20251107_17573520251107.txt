@@ -1,0 +1,16 @@
+[17:57:36 INF] (Thread:15) Logger initialized.
+[17:57:36 INF] (Thread:15) ===== Test Suite Started =====
+[17:57:37 INF] (Thread:15) Starting test: Login_without_username_or_password_should_fail with username=''
+[17:57:37 INF] (Thread:15) Attempting login...
+[17:57:38 INF] (Thread:15) Captured error message: 'Epic sadface: Username is required'
+[17:57:38 INF] (Thread:15) Test passed: Validation message was correct.
+[17:57:40 INF] (Thread:15) Starting test: Login_without_username_or_password_should_fail with username='standard_user'
+[17:57:40 INF] (Thread:15) Attempting login...
+[17:57:41 INF] (Thread:15) Captured error message: 'Epic sadface: Password is required'
+[17:57:41 INF] (Thread:15) Test passed: Validation message was correct.
+[17:57:43 INF] (Thread:15) Starting test: Login_should_succeed with username='standard_user'
+[17:57:43 INF] (Thread:15) Logging in with valid credentials...
+[17:57:44 INF] (Thread:15) Navigated to Main Page. Checking welcome message...
+[17:57:44 INF] (Thread:15) Welcome message: 'Swag Labs'
+[17:57:44 INF] (Thread:15) Test passed: Login successful and welcome message verified.
+[17:57:44 INF] (Thread:15) ===== Test Suite Completed =====

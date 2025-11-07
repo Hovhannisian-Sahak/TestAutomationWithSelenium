@@ -21,6 +21,7 @@ namespace TestLayer.Base
             if (string.IsNullOrWhiteSpace(url))
                 throw new InvalidOperationException(
                     "ApplicationUrl is not configured in appsettings.json or is empty.");
+            WebDriverSingleton.InitDriver(Configuration.BrowserType);
             WebDriverSingleton.Driver.Navigate().GoToUrl(url);
             WebDriverSingleton.Driver.Manage().Window.Maximize();
             WebDriverSingleton.Driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);

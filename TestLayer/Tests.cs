@@ -2,7 +2,7 @@ using TestLayer.Base;
 using BusinessLayer.PageObjects;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using CoreLayer.Logging;
-[assembly: Parallelize(Workers = 2, Scope = ExecutionScope.MethodLevel)]
+[assembly: Parallelize(Workers = 3, Scope = ExecutionScope.MethodLevel)]
 namespace TestLayer;
 
 [TestClass]
