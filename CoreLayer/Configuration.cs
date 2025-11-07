@@ -1,27 +1,39 @@
 using Microsoft.Extensions.Configuration;
+using System;
+using System.IO;
 
-namespace CoreLayer
+namespace CoreLayer.Config
 {
-    public class Configuration
+    public static class Configuration
     {
-        public static string BrowserType { get; private set; }
-
+        public static BrowserType BrowserType { get; private set; }
         public static string AppUrl { get; private set; }
-
         public static string TestDataPath { get; private set; }
 
         static Configuration() => Init();
 
         public static void Init()
         {
-            var configuration = new ConfigurationBuilder()
+            var config = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
                 .Build();
 
-            BrowserType = configuration["BrowserType"] ?? "Firefox";
-            AppUrl = configuration["ApplicationUrl"] ?? string.Empty;
-            TestDataPath = configuration["TestDataPath"] ?? string.Empty;
+            var browserTypeValue = config["BrowserType"] ?? "Firefox";
+            if (!Enum.TryParse(browserTypeValue, true, out BrowserType browserType))
+                browserType = BrowserType.Firefox;
+
+            BrowserType = browserType;
+            AppUrl = config["ApplicationUrl"] ?? string.Empty;
+            TestDataPath = config["TestDataPath"] ?? string.Empty;
+
+            var b = config["BrowserType"];
+            var appUrl = config["ApplicationUrl"];
+            var testDataPath = config["TestDataPath"];
+
+            Console.WriteLine($"BrowserType: {b}");
+            Console.WriteLine($"AppUrl: {appUrl}");
+            Console.WriteLine($"TestDataPath: {testDataPath}");
         }
     }
 }

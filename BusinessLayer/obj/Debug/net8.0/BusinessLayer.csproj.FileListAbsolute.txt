@@ -1,0 +1,17 @@
+C:\Users\Sahak\TestAutomationSelenium\BusinessLayer\obj\Debug\net8.0\BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\Sahak\TestAutomationSelenium\BusinessLayer\obj\Debug\net8.0\BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sahak\TestAutomationSelenium\BusinessLayer\obj\Debug\net8.0\BusinessLayer.AssemblyInfoInputs.cache
+C:\Users\Sahak\TestAutomationSelenium\BusinessLayer\obj\Debug\net8.0\BusinessLayer.AssemblyInfo.cs
+C:\Users\Sahak\TestAutomationSelenium\BusinessLayer\obj\Debug\net8.0\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Sahak\TestAutomationSelenium\BusinessLayer\obj\Debug\net8.0\BusinessLayer.sourcelink.json
+C:\Users\Sahak\TestAutomationSelenium\BusinessLayer\bin\Debug\net8.0\BusinessLayer.deps.json
+C:\Users\Sahak\TestAutomationSelenium\BusinessLayer\bin\Debug\net8.0\BusinessLayer.dll
+C:\Users\Sahak\TestAutomationSelenium\BusinessLayer\bin\Debug\net8.0\BusinessLayer.pdb
+C:\Users\Sahak\TestAutomationSelenium\BusinessLayer\bin\Debug\net8.0\CoreLayer.dll
+C:\Users\Sahak\TestAutomationSelenium\BusinessLayer\bin\Debug\net8.0\CoreLayer.pdb
+C:\Users\Sahak\TestAutomationSelenium\BusinessLayer\obj\Debug\net8.0\Business.EA331CBA.Up2Date
+C:\Users\Sahak\TestAutomationSelenium\BusinessLayer\obj\Debug\net8.0\BusinessLayer.dll
+C:\Users\Sahak\TestAutomationSelenium\BusinessLayer\obj\Debug\net8.0\refint\BusinessLayer.dll
+C:\Users\Sahak\TestAutomationSelenium\BusinessLayer\obj\Debug\net8.0\BusinessLayer.pdb
+C:\Users\Sahak\TestAutomationSelenium\BusinessLayer\obj\Debug\net8.0\ref\BusinessLayer.dll
+C:\Users\Sahak\TestAutomationSelenium\BusinessLayer\bin\Debug\net8.0\appsettings.json

@@ -1,15 +1,14 @@
 using OpenQA.Selenium;
-using Core.Pages;
-
+using BusinessLayer.BasePage;
 namespace BusinessLayer.PageObjects
 {
-    public class LoginPage : BasePage
+    public class LoginPage : Base
     {
         private By usernameField = By.CssSelector("#user-name");
         private By passwordField = By.CssSelector("#password");
         private By loginButton = By.CssSelector("#login-button");
 
-        private By errorMessage = By.CssSelector("h3[data-test='error']");
+        private By errorMessage = By.CssSelector("div.error-message-container.error > h3");
 
 
         public MainPage Login(string username, string password)
@@ -20,16 +19,8 @@ namespace BusinessLayer.PageObjects
             return new MainPage();
         }
 
-        public string LoginWithoutPassword(string username)
+        public string GetErrorMessage()
         {
-            EnterText(usernameField, username);
-            Click(loginButton);
-            return FindElement(errorMessage).Text;
-        }
-
-        public string LoginWithoutCredentials()
-        {
-            Click(loginButton);
             return FindElement(errorMessage).Text;
         }
     }

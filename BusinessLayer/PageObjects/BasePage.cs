@@ -1,16 +1,11 @@
 using OpenQA.Selenium;
-using Core.Drivers;
-
-namespace Core.Pages
+using CoreLayer.Drivers;
+using OpenQA.Selenium.Support.UI;
+namespace BusinessLayer.BasePage
 {
-    public class BasePage
+    public class Base
     {
         protected IWebDriver Driver => WebDriverSingleton.Driver;
-
-        public void NavigateToApp()
-        {
-            Driver.Navigate().GoToUrl(Configuration.AppUrl);
-        }
 
         public void CloseDriver()
         {
@@ -34,11 +29,11 @@ namespace Core.Pages
 
         public void Click(By by)
         {
-            WaitForElementToBePresent(_driver, by, _timeout)?.Click();
+            WaitForElementToBePresent(Driver, by)?.Click();
         }
         public void EnterText(By by, string text)
         {
-            var element = WaitForElementToBePresent(_driver, by, _timeout);
+            var element = WaitForElementToBePresent(Driver, by);
             element.SendKeys(Keys.Control + "a");
             element.SendKeys(Keys.Delete);
             element.Clear();
@@ -47,19 +42,19 @@ namespace Core.Pages
 
         public IReadOnlyCollection<IWebElement> FindElements(By by)
         {
-            var elementPresent = WaitForElementToBePresent(_driver, by, _timeout);
+            var elementPresent = WaitForElementToBePresent(Driver, by);
             return elementPresent.FindElements(by);
         }
 
         public IWebElement FindElement(By by)
         {
-            var elementPresent = WaitForElementToBePresent(_driver, by, _timeout);
+            var elementPresent = WaitForElementToBePresent(Driver, by);
             return elementPresent.FindElement(by);
         }
 
-        public IWebElement WaitForElementToBePresent(IWebDriver Driver, By by, TimeSpan _timeout)
+        public IWebElement WaitForElementToBePresent(IWebDriver Driver, By by)
         {
-            var wait = new WebDriverWait(Driver, _timeout);
+            var wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(10));
             return wait.Until(drv =>
             {
                 try

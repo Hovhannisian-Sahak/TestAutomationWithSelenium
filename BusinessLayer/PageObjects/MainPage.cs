@@ -1,11 +1,10 @@
 using OpenQA.Selenium;
-using Core.Pages;
-
+using BusinessLayer.BasePage;
 namespace BusinessLayer.PageObjects
 {
-    public class MainPage : BasePage
+    public class MainPage : Base
     {
-        private By welcomeMessage = By.CssSelector(".app_logo");
+        private By welcomeMessage = By.CssSelector("div.app_logo");
 
         public string GetWelcomeMessage()
         {
