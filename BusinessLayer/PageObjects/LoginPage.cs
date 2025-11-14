@@ -9,11 +9,36 @@ namespace BusinessLayer.PageObjects
         private By loginButton = By.CssSelector("#login-button");
         private By errorMessage = By.CssSelector("div.error-message-container.error > h3");
 
+
+        public void FillUsername(string text)
+        {
+            EnterText(usernameField, text);
+        }
+
+        public void FillPassword(string text)
+        {
+            EnterText(passwordField, text);
+        }
+
+        public void ClearUsername()
+        {
+            ClearField(usernameField);
+        }
+
+        public void ClearPassword()
+        {
+            ClearField(passwordField);
+        }
+
+        public void ClickLogin()
+        {
+            Click(loginButton);
+        }
         public MainPage Login(string username, string password)
         {
-            EnterText(usernameField, username);
-            EnterText(passwordField, password);
-            Click(loginButton);
+            FillUsername(username);
+            FillPassword(password);
+            ClickLogin();
             return new MainPage();
         }
 

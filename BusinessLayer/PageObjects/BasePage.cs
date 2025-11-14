@@ -15,6 +15,13 @@ namespace BusinessLayer.Base
 
         public void Click(By by) => WaitForElementToBePresent(by)?.Click();
 
+        public void ClearField(By by)
+        {
+            var element = WaitForElementToBePresent(by);
+            element.SendKeys(Keys.Control + "a");
+            element.SendKeys(Keys.Delete);
+            element.Clear();
+        }
         public void EnterText(By by, string text)
         {
             var element = WaitForElementToBePresent(by);
